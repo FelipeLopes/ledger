@@ -47,7 +47,7 @@ def string_is_valid(word):
     return valid_strings[idx-1:idx] == [word]
     
 def increment_nested(data, args, num):
-    if len(args) == 1:
+    if len(args) == 0:
         new_value = data.get("value", 0) + num
         data["value"] = new_value
     else:
